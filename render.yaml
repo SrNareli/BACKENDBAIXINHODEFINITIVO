@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: baixinho-precos-backend
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_VERSION
+        value: 18
